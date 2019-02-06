@@ -2107,7 +2107,7 @@ unsigned int Log(unsigned int channel,const char * fmt, ...)
 		if (strcmp(fname, defaultlogFilename) == 0){ // of log is default log i.t log<port>.txt
 			char holdBuffer[MAX_BUFFER_SIZE];
 			struct tm ptm;
-			sprintf(holdBuffer,"%s - %s", GetTimeInfo(&ptm),logmainbuffer);
+			sprintf(holdBuffer,"%s - %s", GetTimeInfo(&ptm, true),logmainbuffer);
 			strcpy(logmainbuffer, holdBuffer);
 		}
 		out =  rotateLogOnLimit(fname,users);

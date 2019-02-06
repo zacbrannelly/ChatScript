@@ -469,7 +469,7 @@ static int EncodingValue(char* name, char* field, int value)
 #ifdef DEBUG
 #pragma comment(lib, "../SRC/curl/libcurld.lib")
 #else
-#pragma comment(lib, "../SRC/curl/libcurl.lib")
+#pragma comment(lib, "libcurl.x64.lib")
 #endif
 #else
 #include <curl/curl.h>

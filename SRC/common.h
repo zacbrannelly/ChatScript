@@ -23,12 +23,14 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN 
 //#define DISCARDMYSQL 1
 //#define DISCARDPOSTGRES 1
 //#define DISCARDMONGO 1
-//#define DISCARDJSONOPEN 1 
+#define DISCARDJSONOPEN 1 
 //#define DISCARDJAVASCRIPT 1
 //#define DISCARDMYSQL 1
 
 // these can add components
 //#define  TREETAGGER 1
+
+# define DLL 1
 
 #ifdef DLL
 #define NOMAIN 1

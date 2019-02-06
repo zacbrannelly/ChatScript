@@ -879,6 +879,9 @@ unsigned int InitSystem(int argcx, char * argvx[],char* unchangedPath, char* rea
 	*traceuser = 0;
 	*hide = 0;
 	*botheader = 0;
+
+	InitFileSystem(unchangedPath, readablePath, writeablePath);
+
 	FILE* in = FopenStaticReadOnly((char*)"SRC/dictionarySystem.h"); // SRC/dictionarySystem.h
 	if (!in) // if we are not at top level, try going up a level
 	{
